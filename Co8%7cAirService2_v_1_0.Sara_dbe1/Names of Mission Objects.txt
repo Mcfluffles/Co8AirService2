@@ -1,3 +1,9 @@
 missionBoard = The board where you choose missions
 
 p1, p2, p3 ... p8 = players
+
+vspawn1, vspawn2,... = spawn points for VIP
+
+airportHPmarker = MArker saying Drop Off Point
+
+"city"HP = That city's Helipad
