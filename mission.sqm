@@ -1,0 +1,1195 @@
+version=51;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1;
+	class ItemIDProvider
+	{
+		nextID=76;
+	};
+	class MarkerIDProvider
+	{
+		nextID=2;
+	};
+	class Camera
+	{
+		pos[]={8180.2544,191.26591,7816.8809};
+		dir[]={-0.023227662,-0.6344111,0.77281231};
+		up[]={-0.019078536,0.77249193,0.63467783};
+		aside[]={0.9996013,-5.6020508e-007,0.030041004};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"A3_Structures_F_Mil_Helipads",
+	"A3_Structures_F_Heli_Items_Airport",
+	"MELB",
+	"RHS_US_A2_AirImport",
+	"A3_Characters_F_BLUFOR",
+	"a3_characters_f",
+	"A3_Weapons_F_Ammoboxes",
+	"A3_Structures_F_EPC_Civ_InfoBoards"
+};
+randomSeed=8690359;
+class ScenarioData
+{
+	author="Mcfluffles & Dragon";
+	overviewText="Sit back and relax as you fly helicopters and take on transport contracts. v1.0";
+	onLoadMission="You are a badass helicopter pilot.";
+	disabledAI=1;
+	respawn=3;
+	class Header
+	{
+		gameType="Coop";
+	};
+};
+class CustomAttributes
+{
+	class Category0
+	{
+		name="Multiplayer";
+		class Attribute0
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+					class value
+					{
+						items=1;
+						class Item0
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Counter";
+							};
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		nAttributes=2;
+	};
+	class Category1
+	{
+		name="Scenario";
+		class Attribute0
+		{
+			property="EnableDebugConsole";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		nAttributes=1;
+	};
+};
+class Mission
+{
+	class Intel
+	{
+		briefingName="Co 8 | Air Service 2  v1.0";
+		overviewText="You are a badass helicopter pilot v1.0";
+		timeOfChanges=1800.0002;
+		startWeather=0.15000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2016;
+		month=6;
+		hour=10;
+		minute=19;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+	class Entities
+	{
+		items=36;
+		class Item0
+		{
+			dataType="Marker";
+			position[]={8162.8687,176.985,7831.2915};
+			name="marker_0";
+			text="Dragon's Air Service HQ";
+			type="mil_circle";
+			colorName="ColorGreen";
+			id=0;
+		};
+		class Item1
+		{
+			dataType="Marker";
+			position[]={8180.48,176.985,7845.2524};
+			name="respawn_west";
+			type="Empty";
+			id=1;
+		};
+		class Item2
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8211.4473,176.985,7771.8027};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=9;
+			type="Land_HelipadCivil_F";
+		};
+		class Item3
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8211.5967,176.985,7794.6147};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=11;
+			type="Land_HelipadCivil_F";
+		};
+		class Item4
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8191.1387,176.985,7794.4795};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=12;
+			type="Land_HelipadCivil_F";
+		};
+		class Item5
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8191.0151,176.985,7772.021};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=13;
+			type="Land_HelipadCivil_F";
+		};
+		class Item6
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8211.5439,177.09569,7800.2168};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=16;
+			type="PortableHelipadLight_01_white_F";
+		};
+		class Item7
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8217.1543,177.0957,7795.0596};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=17;
+			type="PortableHelipadLight_01_white_F";
+		};
+		class Item8
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8206.0391,177.09541,7794.8647};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=18;
+			type="PortableHelipadLight_01_white_F";
+		};
+		class Item9
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8211.5098,177.09567,7788.9814};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=19;
+			type="PortableHelipadLight_01_white_F";
+		};
+		class Item10
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8196.6416,177.09531,7794.9307};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=20;
+			type="PortableHelipadLight_01_white_F";
+		};
+		class Item11
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8190.7573,177.09572,7800.0366};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=21;
+			type="PortableHelipadLight_01_white_F";
+		};
+		class Item12
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8185.6431,177.0955,7795.0542};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=22;
+			type="PortableHelipadLight_01_white_F";
+		};
+		class Item13
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8191.0713,177.09569,7788.833};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=23;
+			type="PortableHelipadLight_01_white_F";
+		};
+		class Item14
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8190.6436,177.09645,7777.3784};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=24;
+			type="PortableHelipadLight_01_white_F";
+		};
+		class Item15
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8196.6348,177.09566,7772.2373};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=25;
+			type="PortableHelipadLight_01_white_F";
+		};
+		class Item16
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8185.4478,177.09566,7772.0288};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=26;
+			type="PortableHelipadLight_01_white_F";
+		};
+		class Item17
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8191.0928,177.0957,7766.3394};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=27;
+			type="PortableHelipadLight_01_white_F";
+		};
+		class Item18
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8211.5342,177.09583,7777.21};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=28;
+			type="PortableHelipadLight_01_white_F";
+		};
+		class Item19
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8211.4932,177.09567,7766.1626};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=29;
+			type="PortableHelipadLight_01_white_F";
+		};
+		class Item20
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8216.9336,177.09564,7771.2295};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=30;
+			type="PortableHelipadLight_01_white_F";
+		};
+		class Item21
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8205.9365,177.09567,7771.5747};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=31;
+			type="PortableHelipadLight_01_white_F";
+		};
+		class Item22
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8211.5313,178.92644,7794.502};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=38;
+			type="MELB_MH6M";
+		};
+		class Item23
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8211.5146,178.92648,7771.7974};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=39;
+			type="MELB_MH6M";
+		};
+		class Item24
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8191.0884,179.61652,7772.0342};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=42;
+			type="RHS_UH60M_d";
+		};
+		class Item25
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8191.085,179.61649,7794.5522};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=43;
+			type="RHS_UH60M_d";
+		};
+		class Item26
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8182.7598,176.98643,7836.73};
+					};
+					side="West";
+					flags=3;
+					class Attributes
+					{
+						name="p8";
+						description="Pilot";
+						isPlayable=1;
+					};
+					id=54;
+					type="B_Pilot_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=46;
+		};
+		class Item27
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8177.8589,176.98643,7841.2266};
+					};
+					side="West";
+					flags=3;
+					class Attributes
+					{
+						name="p1";
+						description="Head Pilot";
+						isPlayer=1;
+					};
+					id=47;
+					type="B_Pilot_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=55;
+		};
+		class Item28
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8182.4512,176.98643,7841.061};
+					};
+					side="West";
+					flags=3;
+					class Attributes
+					{
+						name="p2";
+						description="Senior Pilot";
+						isPlayable=1;
+					};
+					id=48;
+					type="B_Pilot_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=56;
+		};
+		class Item29
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8177.7939,176.98643,7839.6577};
+					};
+					side="West";
+					flags=3;
+					class Attributes
+					{
+						name="p3";
+						description="Senior Pilot";
+						isPlayable=1;
+					};
+					id=49;
+					type="B_Pilot_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=57;
+		};
+		class Item30
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8182.6401,176.98643,7839.1538};
+					};
+					side="West";
+					flags=3;
+					class Attributes
+					{
+						name="p4";
+						description="Senior Pilot";
+						isPlayable=1;
+					};
+					id=50;
+					type="B_Pilot_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=58;
+		};
+		class Item31
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8177.7549,176.98643,7838.207};
+					};
+					side="West";
+					flags=3;
+					class Attributes
+					{
+						name="p5";
+						description="Pilot";
+						isPlayable=1;
+					};
+					id=51;
+					type="B_Pilot_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=59;
+		};
+		class Item32
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8182.7432,176.98643,7838.062};
+					};
+					side="West";
+					flags=3;
+					class Attributes
+					{
+						name="p6";
+						description="Pilot";
+						isPlayable=1;
+					};
+					id=52;
+					type="B_Pilot_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=60;
+		};
+		class Item33
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8177.5459,176.98643,7836.8867};
+					};
+					side="West";
+					flags=3;
+					class Attributes
+					{
+						name="p7";
+						description="Pilot";
+						isPlayable=1;
+					};
+					id=53;
+					type="B_Pilot_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=61;
+		};
+		class Item34
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8180.481,177.87743,7846.3389};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="this addAction [""Open Virtual Arsenal"", {[""Open"",true] spawn BIS_fnc_arsenal}];";
+			};
+			id=62;
+			type="B_supplyCrate_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[""16Rnd_9x21_Mag"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""Chemlight_green"",""Laserbatteries"",""HandGrenade"",""MiniGrenade"",""SmokeShell"",""SmokeShellGreen"",""UGL_FlareWhite_F"",""UGL_FlareGreen_F"",""ACE_10Rnd_762x51_M118LR_Mag"",""ACE_10Rnd_762x51_Mk316_Mod_0_Mag"",""ACE_10Rnd_762x51_Mk319_Mod_0_Mag"",""ACE_20Rnd_762x51_Mag_Tracer"",""ACE_20Rnd_762x51_Mag_Tracer_Dim""],[6,2,2,6,2,6,6,2,2,2,2,4,4,4,4,4]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item35
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8183.4409,177.95389,7846.0688};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="missionBoard";
+			};
+			id=74;
+			type="MapBoard_seismic_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+	};
+};
